@@ -1,0 +1,29 @@
+#Turnoff welcome message
+startup_message off
+
+# Disable visual bell
+vbell off
+
+#Set scrollback buffer to 10000
+defscrollback 1000000
+
+#Don't save vim output in scroll bar
+altscreen on
+
+# Enable scrolling
+#termcapinfo xterm* ti@:te@
+
+# Fix for Name column in windowlist only show "bash"
+windowlist string "%4n %h%=%f"
+
+# Indicate 256 color screen
+term screen-256color
+
+#use bash
+shell bash
+
+# Customize the status line
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+#hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%1`][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+#caption always "%{= kw}%-w%{= gW}%n %t%{-}%+w %-=  %Y-%m-%d %C:%s"
